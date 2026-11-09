@@ -13,7 +13,7 @@ function setup() {
   btn = createButton("센서 켜기");
   btn.position(20, height - 80);
   btn.size(150, 50);
-  btn.mousePressed(askPermission);
+  btn.mouseClicked(askPermission); // 아이폰 권한 요청은 '클릭'에서만 됨 (mousePressed는 안 됨)
 }
 
 // 아이폰은 사용자가 버튼을 눌러야 센서 권한을 요청할 수 있음
